@@ -146,7 +146,47 @@ body {background-color: #f8f8f8;}
  <div class="row">
   <div class="col-lg-12" background-color:#ffffff;>
    <h3>Global Software Product and Services</h3>
-   <p align="justify">mrtodddavis is a cloud software development company that provides technology solutions that manage and facilitate business processes efficiently. With more than 20 years of experience, we have the expertise, IT knowledge and skilled teams to understand our customers, solve business issues and provide cost-effective solutions.</p>
+   <p align="justify">
+<?php
+ 
+print "Good ";
+ 
+$t = date("H");
+if ($t < "12") {
+echo "morning. ";
+} elseif ($t < "16") {
+echo "afternoon. ";
+} else {
+echo "evening. ";
+}
+ 
+echo "Today is " . date("l") . " ";
+$today = getdate();
+print "$today[month] $today[mday]. It is day No. $today[yday] of the year $today[year].
+ 
+";
+ 
+print "Your IP address is ";
+echo ($_SERVER['REMOTE_ADDR']);
+ 
+print ".
+ 
+How do you like using ";
+echo get_browser_name($_SERVER['HTTP_USER_AGENT']);
+function get_browser_name($user_agent)
+{
+if (strpos($user_agent, 'Opera') || strpos($user_agent, 'OPR/')) return 'Opera';
+elseif (strpos($user_agent, 'Edge')) return 'Edge';
+elseif (strpos($user_agent, 'Chrome')) return 'Chrome';
+elseif (strpos($user_agent, 'Safari')) return 'Safari';
+elseif (strpos($user_agent, 'Firefox')) return 'Firefox';
+elseif (strpos($user_agent, 'MSIE') || strpos($user_agent, 'Trident/7')) return 'Internet Explorer';
+else return 'Other';
+}
+print " to browse the internet?";
+ 
+?>
+				</p>
    <hr>
    <h3>What We Do</h3>
    <p align="justify">We enable software teams across startups and Fortune 500 firms to become smarter and faster every day. We  provide technology consulting services in niche areas of software development and agile project management. Our consulting service professionals have the experience and skills to analyze your needs and find the right solutions for you.</p>
