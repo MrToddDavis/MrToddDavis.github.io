@@ -94,6 +94,11 @@ body, html {
     font-size: 21px;
     text-align: center;
     z-index: 998;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 </style>
 </head>
@@ -128,8 +133,8 @@ body, html {
  </div>
 </nav>
 	
-<div align="center"><p>Todd L. Davis</p></div>
-<script>$("#fade p").delay(1000).animate({"opacity": "1"}, 700);</script>
+<div class="fade"><p>Todd L. Davis</p></div>
+<script>$("#fade p").addClass("load");</script>
 											    
 <div class="parallax" style="margin-top: -100px;"></div>
 <div style="height:500px;background-color:white; padding: 0 0 20px 0;">
