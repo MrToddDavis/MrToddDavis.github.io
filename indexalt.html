@@ -19,7 +19,11 @@
  <![endif]-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>$("#fade p").addClass("load");</script>
+<script>
+$(document).ready(function(){
+    $(".fade").hide(0).delay(500).fadeIn(3000)
+});
+</script>
 <style>
 body, html {
     height: 100%;
@@ -135,7 +139,7 @@ body, html {
  </div>
 </nav>
 	
-<div id="fade" class="fade"><p>Todd L. Davis</p></div>
+<div class="fade"><p>Todd L. Davis</p></div>
 											    
 <div class="parallax" style="margin-top: -100px;"></div>
 <div style="height:700px;background-color:#f2f2f2;">
