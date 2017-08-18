@@ -150,10 +150,12 @@ body, html {
 </div>
 <div class="parallax"></div>
 		     
-<div class="fade"><h3 style="color: #333333;">Todd L. Davis</h3></div>
+<div class="fade" style="display:none;"><h3 style="color: #333333;">Todd L. Davis</h3></div>
 <script>
-$(document).ready(function(){
-    $(".fade").hide(0).delay(500).fadeIn(3000)
+$(document).ready(function () {
+    $('div.fade').fadeIn(2200);
+    // OR $('div.fade').show(2200);
+    // OR $('div.fade').slideDown("slow");
 });
 </script>
 		
