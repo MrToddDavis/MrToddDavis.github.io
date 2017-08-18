@@ -89,7 +89,9 @@ body, html {
     opacity: 0.4;
     filter: alpha(opacity=40);
 }
-
+div.hidden {
+    display: none
+}
 </style>
 </head>
 <body>
@@ -150,12 +152,10 @@ body, html {
 </div>
 <div class="parallax"></div>
 		     
-<div class="fade" style="display:none;"><h3 style="color: #333333;">Todd L. Davis</h3></div>
+<div class="hidden"">Todd L. Davis</div>
 <script>
 $(document).ready(function () {
-    $('div.fade').fadeIn(2200);
-    // OR $('div.fade').show(2200);
-    // OR $('div.fade').slideDown("slow");
+    $('div.hidden').fadeIn(1000).removeClass('hidden');
 });
 </script>
 		
