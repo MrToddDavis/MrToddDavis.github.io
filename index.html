@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#f79646">
     <title>Todd L. Davis | Aspiring Web Developer</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -23,17 +23,7 @@ a.footer:link {color:#ffffff;}
 a.footer:hover {color:#dddddd;}
 a.one:visited {color:#ffffff;}
 a.one:hover {color:#dddddd;}
-.navbar-btn {
-    background-color: #1089ed;
-    border: #023fc8;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-.navbar-btn:hover {
-    background-color: #0450fe;
-    border: #023fc8;
-}
-.navbar {background-color: #f8f8f8; border-color: #4d5265; color: #333333; }
+.navbar {background-color: #f79646; border-color: #f79646; color: #333333; }
 .tag {position: relative; top: 130px; font-size: 2.4em; font-stretch: condensed; font-weight: 550; color: #ffffff; text-shadow: 2px 2px #4d5265; margin-bottom: 1px; z-index: 950;}
 .carousel slide {z-index: 900; }
 .logo {position: relative; top: -35px;}
@@ -95,7 +85,7 @@ body {background-color: #f8f8f8;}
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://mrtodddavis.github.io/"><img src="https://mrtodddavis.github.io/logo.png" width="100" class="logo"></a>
+                <a class="navbar-brand" href="https://mrtodddavis.github.io/"><img src="https://mrtodddavis.github.io/logo.png" width="90" class="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav"">
@@ -130,60 +120,12 @@ body {background-color: #f8f8f8;}
  </div>
 </div>
 
-<div class="container" align="center"><a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-flickr"></a>
-<a href="#" class="fa fa-rss"></a></div>
-	
 <div class="container">
  <div class="row">
   <div class="col-lg-12" background-color:#ffffff;>
    <h3>Global Software Product and Services</h3>
    <p align="justify">
-<?php
- 
-print "Good ";
- 
-$t = date("H");
-if ($t < "12") {
-echo "morning. ";
-} elseif ($t < "16") {
-echo "afternoon. ";
-} else {
-echo "evening. ";
-}
- 
-echo "Today is " . date("l") . " ";
-$today = getdate();
-print "$today[month] $today[mday]. It is day No. $today[yday] of the year $today[year].
- 
-";
- 
-print "Your IP address is ";
-echo ($_SERVER['REMOTE_ADDR']);
- 
-print ".
- 
-How do you like using ";
-echo get_browser_name($_SERVER['HTTP_USER_AGENT']);
-function get_browser_name($user_agent)
-{
-if (strpos($user_agent, 'Opera') || strpos($user_agent, 'OPR/')) return 'Opera';
-elseif (strpos($user_agent, 'Edge')) return 'Edge';
-elseif (strpos($user_agent, 'Chrome')) return 'Chrome';
-elseif (strpos($user_agent, 'Safari')) return 'Safari';
-elseif (strpos($user_agent, 'Firefox')) return 'Firefox';
-elseif (strpos($user_agent, 'MSIE') || strpos($user_agent, 'Trident/7')) return 'Internet Explorer';
-else return 'Other';
-}
-print " to browse the internet?";
- 
-?>
-				</p>
+
    <hr>
    <h3>What We Do</h3>
    <p align="justify">We enable software teams across startups and Fortune 500 firms to become smarter and faster every day. We  provide technology consulting services in niche areas of software development and agile project management. Our consulting service professionals have the experience and skills to analyze your needs and find the right solutions for you.</p>
@@ -216,16 +158,21 @@ print " to browse the internet?";
 <div width="100%" style="padding: 10px; background-color: #4d5265; margin-right: 0; margin-left: 0;">
  <p align="center" class="footer"><a href="https://mrtodddavis.github.io/" class="footer">Home</a> | <a href="https://mrtodddavis.github.io/" class="footer">Case Management</a> | <a href="https://mrtodddavis.github.io/" class="footer">Data Management</a> | <a href="https://mrtodddavis.github.io/" class="footer">Consulting</a> | <a href="https://mrtodddavis.github.io/" class="footer">About Us</a> | <a href="https://mrtodddavis.github.io/" class="footer">Contact</a> | <a href="https://mrtodddavis.github.io/" class="footer">Site Map</a></p>
  <p align="center" class="footer"><a href="privacypolicy.pdf" class="footer">Privacy Policy</a> &nbsp; &nbsp; <a href="legaldisclaimer.pdf" class="footer">Legal Disclaimer</a></p></div>
+ 
+<hr width="50% />
+ 
+<div align="center"><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-flickr"></a>
+<a href="#" class="fa fa-rss"></a></div>
+			     
+<hr width="50% />
 	
-<div width="100%" style="padding-top: 10px; margin: 10px 0 0 0;"><p align="center">2017 © mrtodddavis.com, Inc. All Rights Reserved</p></div>
+<div width="100%" style="padding-top: 10px; margin: 10px 0 0 0;"><p align="center">Site created by Todd L. Davis © 2017 All Rights Reserved</p></div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-    $('.carousel').carousel({
-        interval: 5000
-    })
-    </script>
 </body>
 </html>
