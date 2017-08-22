@@ -31,6 +31,14 @@
 .fa-instagram { background: #125688; color: white; }
 .fa-flickr { background: #f40083; color: white; }
 .fa-rss { background: #ff6600; color: white; }
+.parallax {
+    background-image: url("https://mrtodddavis.github.io/main.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 body {background-color: #f8f8f8;}
 -->
 </style>
@@ -65,12 +73,16 @@ body {background-color: #f8f8f8;}
  </div>
 </nav>
 
-<div style="width: 100%; background-color: #f79646; margin: 80px 0 0 0; padding: 0 0 2px; 0">
- <h3 style="color: #023777;" align="center">Todd L. Davis - Web/Graphic Design, Writer</h3>
+<div style="width: 100%; background-color: #f79646; margin: 80px 0 0 0; padding: 1px 0 2px; 0">
+ <h3 style="color: #023777;" align="center">Todd L. Davis</h3>
 </div>
 	
-<div style="width: 100%; margin: 0;">
- <img src="https://mrtodddavis.github.io/main.jpg" width="100%" alt="Todd L. Davis" style="opacity: 0.5; filter: alpha(opacity=50);">
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:white;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 	
 <div class="container">
