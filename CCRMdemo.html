@@ -8,7 +8,8 @@
 	<style>
 		html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 	</style>
-	<body class="w3-theme-l5"><!-- Navbar -->
+	<body class="w3-theme-l5">
+		<!-- Navbar -->
 		<div class="w3-top" style="background-color: #333333;">
 			<div class="w3-bar w3-left-align w3-large">
 				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
@@ -26,10 +27,11 @@
 						<a href="#" class="w3-bar-item w3-button">Link 3</a></div>
 				</div>
 				<div class="search-container" style="margin-top: 15px; float: right; padding-right: 20px; border-radius: 15px;">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search..." name="search" style="border-radius: 15px; padding-left: 10px;"><button type="submit" style="position: relative; left: -35px; background: none; border: 0; cursor: pointer;"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search..." name="search" style="border-radius: 15px; padding-left: 10px;">
+						<button type="submit" style="position: relative; left: -35px; background: none; border: 0; cursor: pointer;"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<!-- Navbar on small screens -->
@@ -147,6 +149,11 @@
 		<footer class="w3-container" style="background: #000000;">
 			<p align="center" style="color: #FFFFFF;">Page Generation Time: 1513606765.0624 sec. </p>
 		</footer>
-		<script>// Accordionfunction myFunction(id) {var x = document.getElementById(id);if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";x.previousElementSibling.className += " w3-theme-d1";} else {x.className = x.className.replace("w3-show", "");x.previousElementSibling.className =x.previousElementSibling.className.replace(" w3-theme-d1", "");}}// Used to toggle the menu on smaller screens when clicking on the menu buttonfunction openNav() {var x = document.getElementById("navDemo");if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";} else {x.className = x.className.replace(" w3-show", "");}}</script>
+		<script>
+			// Accordion
+			function myFunction(id) {var x = document.getElementById(id);if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";x.previousElementSibling.className += " w3-theme-d1";} else {x.className = x.className.replace("w3-show", "");x.previousElementSibling.className =x.previousElementSibling.className.replace(" w3-theme-d1", "");}}
+			// Used to toggle the menu on smaller screens when clicking on the menu button
+			function openNav() {var x = document.getElementById("navDemo");if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";} else {x.className = x.className.replace(" w3-show", "");}}
+		</script>
 	</body>
 </html>
